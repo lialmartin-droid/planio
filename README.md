@@ -1,4 +1,4 @@
-# Plánio 1.0.0
+# Plánio 1.1.0
 
 Osobní kalendář směn, dovolené, náhradního volna, svozů odpadu a vlastních událostí. Česká aplikace pro telefon i počítač, bez účtu a bez instalace balíčků.
 
@@ -31,23 +31,21 @@ Starší rozpis před datem změny zůstává zachovaný. Jednotlivé ručně zm
 
 V **Časy a barvy směn** nastav názvy, začátky, konce, barvy a neplacené přestávky. Výchozí 8hodinové směny jsou 06–14, 14–22 a 22–06. U 12hodinových směn jsou výchozí časy 06–18 a 18–06. Přestávka je zpočátku 0 minut; zadej skutečnou neplacenou přestávku podle své evidence. Změna typu směny ovlivňuje všechny dny tohoto typu; jednorázové změny dělej v detailu dne.
 
-### 2. Zůstatky volna
+### 2. Zbývající dovolená a náhradní volno
 
-Otevři **Moje volno**, vyber rok a u každého ze tří účtů nastav počáteční zůstatek:
+V **Moje volno** vyber rok a u dovolené, požární hlídky a první pomoci klepni na **Zadat zbývající hodiny**. Zadej aktuální zůstatek podle práce, například 60 hodin dovolené. Další zadané volno se automaticky odečte; týden pondělí–pátek spotřebuje 37,5 hodin a zbude 22,5 hodin.
 
-- Dovolená.
-- Požární hlídka.
-- První pomoc.
+Zadaný aktuální zůstatek je nová výchozí hodnota. Starší čerpání, které je již zahrnuté v tomto zůstatku, se neodečítá podruhé. Budoucí, už naplánované volno se od tohoto zůstatku dál rezervuje. Pole proto uvádí zůstatek podle práce **před odečtením budoucích plánů**. Další získané hodiny lze připsat zvlášť s datem.
 
-Zůstatky jsou nezávislé a vedené v hodinách. Počáteční zůstatek znamená hodnotu na začátku vybraného roku. Pokud začínáš uprostřed roku a zapisuješ pouze budoucí čerpání, můžeš jako počáteční hodnotu zadat aktuální zůstatek a staré čerpání nedoplňovat.
+**Dovolená na celý pracovní den spotřebuje vždy 7,5 h.** Nezáleží na tom, zda je směna v kalendáři zadaná jako osmihodinový časový rozsah. Celodenní volno znamená žádnou práci; nepočítá se zbylá půlhodina. Víkendy a svátky bez směny dovolenou nespotřebují.
 
-Další získané hodiny přidávej přes **Připsat hodiny** s konkrétním datem. Budoucí připsání se do současného zůstatku započítá až v daný den. Nárok ani převod mezi roky se neodhadují: zadáš je podle svých skutečných údajů.
+U obou druhů náhradního volna vidíš samostatný stav **NEČERPÁNO**, **NAPLÁNOVÁNO** nebo **ČERPÁNO**, počet hodin a poslední čerpání. Pokud už bylo NV použité před zahájením evidence, při zadání zůstatku zaškrtni **NV jsem už v tomto roce čerpal mimo evidenci dnů**. Tato značka pouze potvrzuje čerpání; zadané zbývající hodiny nesnižuje znovu.
 
-**Aktuální zůstatek** = počáteční hodiny + připsané hodiny do dneška − čerpání do dneška.
+Volno na budoucí datum je naplánované. V dnešním a minulém datu se považuje za čerpané. Pokud se čerpání neuskutečnilo, záznam změň nebo zruš. Náhradní volno lze zadat na týden i vlastní období; počet hodin NV za celý den lze upravit.
 
-**Hodiny k naplánování** = aktuální zůstatek − rezervované budoucí čerpání.
+Pokročilé zadání celoročního nároku zůstává pod rozbalovací volbou v dialogu. Tím lze znovu přejít na účetnictví od začátku roku. Pro běžné použití stačí aktuální zůstatek.
 
-Plánované volno v dnešním a minulém datu se považuje za čerpané. Pokud se čerpání neuskuteční, změň nebo odeber záznam dne.
+Každý rok má samostatné zůstatky. Nároky a převody zadáš podle skutečných údajů.
 
 ### 3. Svozy odpadu
 
@@ -57,12 +55,12 @@ Každý jednotlivý svoz lze přesunout nebo zrušit. Ostatní termíny zůstáv
 
 ## Každodenní používání
 
-- **Kalendář:** celé dny mají barvu směny. Dovolená a náhradní volno mají modré šrafování. Tečky označují svozy, značky další události a poznámky. Svátky mají hvězdičku. Po klepnutí na den otevřeš všechny podrobnosti.
+- **Kalendář:** celé dny mají barvu směny. Dovolená a náhradní volno mají modré šrafování. Tečky označují svozy, značky další události a poznámky. Svátky mají výrazný zlatý rámeček a označení SV. Celý název je výrazně uvedený v detailu dne; tlačítko Přehled svátků zobrazí celý rok. Po klepnutí na den otevřeš všechny podrobnosti.
 - **Čísla týdnů:** ISO týdny začínají pondělím; na přelomu roku patří týden k odpovídajícímu týdennímu roku. Existuje i týden 53.
 - **Navigace:** šipky přepínají období, kulaté tlačítko vrací dnešek. Klepnutím na název měsíce vybereš měsíc a rok přímo. Lze přepnout měsíční a týdenní zobrazení.
-- **Detail dne:** změň směnu jen pro daný den, zadej volno v hodinách, skutečně odpracované hodiny a poznámku. Pro výjimečnou sobotní směnu vyber skutečný typ směny.
+- **Detail dne:** změň směnu jen pro daný den, zadej volno v hodinách a rozliš celou směnu či částečné volno, skutečně odpracované hodiny a poznámku. Pro výjimečnou sobotní směnu vyber skutečný typ směny.
 - **Skutečnost:** prázdné pole znamená nezapsaný den, nikoliv 0 hodin. Zapsaná nula znamená skutečně odpracovaných 0 hodin. Přesčas je kladný rozdíl skutečnosti proti plánovaným pracovním hodinám po odečtení volna.
-- **Chytré volno:** vyber období, druh volna a sleduj potřebné hodiny, zůstatek i souvislé volno včetně okolních víkendů a svátků. Volno se zapíše pouze tam, kde je pracovní směna. Výpočet zohlední i již zadané volno. U překročení zůstatku nebo náhrady jiného druhu volna se zobrazí upozornění.
+- **Chytré volno:** klepni na výrazné **+ Volno** přímo v kalendáři nebo na tlačítko v Moje volno. Zvol **Celý týden najednou** a libovolný den tohoto týdne, nebo **Vlastní období od–do**. Všechny pracovní dny se zadají jedním potvrzením. Sleduj potřebné hodiny, zůstatek i souvislé volno včetně okolních víkendů a svátků. Volno se zapíše pouze tam, kde je pracovní směna. Tlačítko Zrušit tento druh volna v období umožní vrátit celé období jedním potvrzením a uvolní jeho hodiny. Výpočet zohlední i již zadané volno. U překročení zůstatku nebo náhrady jiného druhu volna se zobrazí upozornění.
 - **Vlastní události:** přidej lékaře, školení nebo rodinnou akci s poznámkou. Časy jsou volitelné; vyplň oba nebo ani jeden. Událost může být jednorázová nebo se opakovat po dnech, týdnech či měsících. Měsíční událost 31. dne vynechá měsíce bez 31. dne. Úprava opakované události platí pro celou sérii.
 - **Přehled:** plánované hodiny, plán práce po odečtení volna, zapsaná skutečnost, přesčasy, počty směn, nočních a víkendových směn. Noční směny mají správně konec následující den. Pracovní hodiny představují smluvenou délku směny; změna letního času její délku automaticky nemění.
 - **Vzhled a filtry:** tmavý, světlý nebo systémový režim; samostatně lze skrýt směny, volno, svozy, události a svátky.
@@ -85,10 +83,16 @@ Data zůstávají lokálně v prohlížeči. Neodesílají se na GitHub ani do j
 
 ## Ověření
 
-Prošlo 24 automatických kontrol: datum a ISO týdny, svátky, směnový cyklus, víkendy, změna cyklu, noční směny, oddělené zůstatky, chytré plánování přes dva roky, svozy a jejich výjimky, opakované události, export ICS, obnova zálohy a napojení základních formulářů.
+Prošlo 33 automatických kontrol: datum a ISO týdny, svátky, směnový cyklus, víkendy, změna cyklu, noční směny, oddělené zůstatky, chytré plánování přes dva roky, svozy a jejich výjimky, opakované události, export ICS, obnova zálohy a napojení základních formulářů.
+
+Nové kontroly ověřují také 7,5hodinovou dovolenou, zadání celého týdne, aktuální zůstatek bez dvojího odečítání, stavy náhradního volna a zvýraznění svátků.
 
 Kontrola formulářů používá jednoduché prostředí bez prohlížeče. Nevypovídá o skutečném rozložení stránky, klávesnici ani importu ICS v iOS. Přímo na iPhonu a v Safari aplikace při této přípravě ověřena nebyla.
 
 Pro vývojářské spuštění kontrol stačí Node.js: `node --test tests/*.test.mjs`. Pro běžné používání Node.js nepotřebuješ.
 
 Zdroj přehledu českých svátků: [MPSV – zákon č. 245/2000 Sb.](https://ppropo.mpsv.cz/zakon_245_2000). Pohyblivé velikonoční svátky aplikace vypočítává pro vybraný rok.
+
+## Aktualizace z verze 1.0.0
+
+Nahraj nové soubory na stejné místo a v aplikaci spusť kontrolu aktualizace. Používá se stejný klíč uložených údajů; směny, svozy, poznámky a další záznamy zůstávají zachované. Staré zálohy lze načíst. Původní celodenní dovolená počítaná z celé směny se opraví na 7,5 hodin; částečné volno se zachová. Pak si v Moje volno případně nastav aktuální zůstatek podle práce.

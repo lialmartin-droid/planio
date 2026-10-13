@@ -8,3 +8,15 @@
 .usage-status{font-size:10px;font-weight:800;letter-spacing:.5px;padding:7px 9px;border-radius:8px;white-space:nowrap}.usage-status.used{background:#77bda929;color:#77bda9}.usage-status.planned{background:#ed9f5829;color:#ed9f58}.usage-status.unused{background:var(--panel2);color:var(--muted)}.toolbar>div:last-child{display:flex;gap:4px}.toolbar .small-button{font-size:10px;padding:6px 7px}.toolbar .segmented button{padding:4px 9px}
 
 .day.holiday-day{border:2px solid #e9bd39}.day.holiday-day:not(.shift):not(.leave-day){background:#3d3424}body[data-theme=light] .day.holiday-day:not(.shift):not(.leave-day){background:#fff2cf}.day.holiday-day .holiday-mark{font-size:7px;font-weight:900;padding:2px 3px;background:#e9bd39;color:#332b18;border-radius:3px;top:3px;right:2px}.holiday-detail{background:#e9bd3919;border:1px solid #e9bd3980;border-radius:12px;padding:13px;margin:12px 0}.holiday-detail span{font-size:9px;display:block;letter-spacing:.6px;color:var(--muted);margin-bottom:5px}.holiday-detail strong{font-size:14px}.holiday-list strong{display:block;font-size:13px;margin-top:5px}.holiday-date{color:#e9bd39;font-size:17px;font-weight:800}body[data-theme=light] .holiday-date{color:#966817}.holiday-past{opacity:.65}.holiday-today{background:#e9bd3919;border-radius:10px;padding:12px!important}.legend .small-button{min-height:25px;padding:3px 7px;font-size:9px}
+
+/* Calendar rows retain their size in four-, five- and six-week months. */
+.calendar-page.month-page{height:auto;min-height:100%}
+.calendar-page.month-page> *{flex-shrink:0}
+.calendar-shell{flex:0 0 auto;min-height:0;max-height:none;display:block}
+.calendar-grid{display:grid;flex:none;grid-auto-rows:auto;gap:4px}
+.calendar-row{flex:none;min-height:0;align-items:stretch}
+.day{width:100%;aspect-ratio:1;min-height:44px;height:auto}
+@media(min-width:600px){.calendar-grid{gap:7px}.day{aspect-ratio:1.35}.calendar-shell{max-height:none}}
+@media(max-height:740px){.calendar-shell{min-height:0}}
+
+.overtime-mark{font-size:10px;line-height:1;font-weight:900}
